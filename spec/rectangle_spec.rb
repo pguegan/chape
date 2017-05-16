@@ -7,7 +7,6 @@ RSpec.describe Rectangle do
   describe "#perimeter" do
 
     it "computes the perimeter" do
-      skip
       expect(rectangle.perimeter).to eq(30)
     end
 
@@ -16,7 +15,6 @@ RSpec.describe Rectangle do
   describe "#area" do
 
     it "computes the area" do
-      skip
       expect(rectangle.area).to eq(50)
     end
 
@@ -27,12 +25,10 @@ RSpec.describe Rectangle do
     let(:scaled) { rectangle.scale 3 }
 
     it "is a Rectangle" do
-      skip
       expect(scaled.class).to eq(Rectangle)
     end
 
-    it "scales the rectangle" do
-      skip
+    it "scales both width and height" do
       expect(scaled).to eq(Rectangle.new 30, 15)
     end
 

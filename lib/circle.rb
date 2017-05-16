@@ -7,15 +7,20 @@ class Circle
   end
 
   def area
-    # TODO
+    Math::PI * radius ** 2
   end
 
   def perimeter
-    # TODO
+    2 * Math::PI * radius
   end
 
   def scale(factor)
-    # TODO
+    Circle.new radius * factor
+  end
+
+  def ==(other)
+    return false unless other.is_a?(Circle)
+    radius == other.radius
   end
 
 end

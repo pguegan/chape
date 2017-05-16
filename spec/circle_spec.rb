@@ -7,7 +7,6 @@ RSpec.describe Circle do
   describe "#perimeter" do
 
     it "computes the perimeter" do
-      skip
       expect(circle.perimeter).to be_within(0.00001).of(31.4159265359)
     end
 
@@ -16,7 +15,6 @@ RSpec.describe Circle do
   describe "#area" do
 
     it "computes the area" do
-      skip
       expect(circle.area).to be_within(0.00001).of(78.5398163397)
     end
 
@@ -27,12 +25,10 @@ RSpec.describe Circle do
     let(:scaled) { circle.scale 3 }
 
     it "is a circle" do
-      skip
       expect(scaled.class).to eq(Circle)
     end
 
-    it "scales the circle" do
-      skip
+    it "scales the radius" do
       expect(scaled).to eq(Circle.new 15)
     end
 

@@ -7,7 +7,6 @@ RSpec.describe Triangle do
   describe "#perimeter" do
 
     it "computes the perimeter" do
-      skip
       expect(triangle.perimeter).to eq(22)
     end
 
@@ -16,7 +15,6 @@ RSpec.describe Triangle do
   describe "#area" do
 
     it "computes the area" do
-      skip
       expect(triangle.area).to be_within(0.00001).of(15.198684153570664)
     end
 
@@ -27,12 +25,10 @@ RSpec.describe Triangle do
     let(:scaled) { triangle.scale 2 }
 
     it "is a Triangle" do
-      skip
       expect(scaled.class).to eq(Triangle)
     end
 
-    it "scales the triangle" do
-      skip
+    it "scales all sides" do
       expect(scaled).to eq(Triangle.new 16, 8, 20)
     end
 
